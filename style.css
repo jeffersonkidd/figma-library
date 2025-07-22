@@ -1,9 +1,16 @@
+* {
+  box-sizing: border-box;
+  outline: 0px solid red;
+  outline-offset: -1px;
+}
+
 body {
   font-family: Avenir;
-  font-weight: 300;
-  background-color: #28638a;
+  background-color: var(--colors-background);
+  color: var(--colors-white);
   padding: 2rem;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 h1 {
@@ -22,7 +29,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #033C5A;
+  color: var(--colors-link);
   background: #e0f0ff;
   padding: 0.5rem 1rem;
   border-radius: 6px;

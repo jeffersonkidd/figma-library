@@ -6,7 +6,7 @@ class ButtonPrimary extends HTMLElement {
       <button class="button-primary"><slot>Button</slot></button>
       <style>
         .button-primary {
-          background: var(--color-primary, #033C5A);
+          background: var(--colors-primary);
           color: #fff;
           border: none;
           border-radius: 6px;
@@ -16,7 +16,14 @@ class ButtonPrimary extends HTMLElement {
           transition: background 0.2s;
         }
         .button-primary:hover {
-          background: var(--color-primary-hover, #05507a);
+          background: var(--colors-primary-hover);
+        }
+        .button-primary:focus {
+          outline: 2px solid var(--colors-primary-focus);
+          outline-offset: -1px;
+        }
+        .button-primary:active {
+          background: var(--colors-primary-active);
         }
       </style>
     `;
