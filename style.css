@@ -1,6 +1,7 @@
 body {
-  font-family: Avenir, sans-serif;
-  background-color: #f9f9f9;
+  font-family: Avenir;
+  font-weight: 300;
+  background-color: #28638a;
   padding: 2rem;
   line-height: 1.6;
 }
