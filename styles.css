@@ -6,7 +6,7 @@
 
 body {
   font-family: Avenir;
-  background-color: var(--colors-background);
+  background-color: transparent;
   color: var(--colors-white);
   padding: 2rem;
   line-height: 1.5;
