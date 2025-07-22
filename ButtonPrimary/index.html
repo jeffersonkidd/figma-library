@@ -2,18 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ButtonPrimary</title>
-  <link rel="stylesheet" href="/tokens.css" />
-  <link rel="stylesheet" href="/styles.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="button.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/figma-library/index.css" />
+  <style>
+    .button-primary {
+      background: #033C5A;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .button-primary:hover {
+      background: #05507a;
+    }
+  </style>
 </head>
 <body>
-  <h2>ButtonPrimary Demo</h2>
-  <!-- Web Component usage -->
-  <button-primary>Click Me</button-primary>
-  <!-- Or, fallback plain HTML -->
-  <!-- <button class="button-primary">Click Me</button> -->
+  <template id="button-primary-template">
+    <button class="button-primary"><slot>Button</slot></button>
+  </template>
+  <script>
+    class ButtonPrimary extends HTMLElement {
+      constructor() {
+        super();
+        const template = document.getElementById('button-primary-template');
+        const shadow = this.attachShadow({ mode: 'open' });
+        shadow.appendChild(template.content.cloneNode(true));
+      }
+    }
+    customElements.define('button-primary', ButtonPrimary);
+  </script>
+
+  <!-- Usage example -->
+  <button class="button-primary">Eat me!!!</button>
 </body>
 </html>
