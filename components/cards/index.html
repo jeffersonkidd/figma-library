@@ -3,35 +3,49 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/globals.css" />
-    <link rel="stylesheet" href="css/styleguide.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/typography.css" />
-    <title>Cards</title>
+    <link rel="stylesheet" href="/css/globals.css" />
+    <link rel="stylesheet" href="/css/styleguide.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/typography.css" />
+    <title>Card Component</title>
     <script type="module" src="/js/main.js" defer></script>
   </head>
-<body>
-  <header>
-    <nav>
-      <div class="navbar">
-        <a href="" class="logo">🥡 Component Library</a>
-        <ul class="nav-links">
-          <li><a href="">Layouts</a></li>
-          <li><a href="">Components</a></li>
-          <li><a href="">Tokens</a></li>
-          <li><a href="">Assets</a></li>        
-          <li><a href="">About</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <h1>📦 Component Library</h1>
-    <!-- Usage example -->
-    <h2>Base Card</h2>
-    <p>This is a custom button component.</p>
-  </main>
-  <footer></footer>
-</body>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div class="navbar">
+            <a href="/index.html" class="logo">🥡 GMH Design Library</a>
+            <ul class="nav-links">
+              <li><a href="">Layouts</a></li>
+              <li><a href="">Components</a></li>
+              <li><a href="">Tokens</a></li>
+              <li><a href="">Assets</a></li>        
+              <li><a href="">About</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <section>
+          <div class="container">
+            <h1 class="heading-1 serif">📦 Cards</h1>
+            <h2 class="text-2xl sans-bold">Base Card</h2>
+            <p>This is a base card button component.</p>
+            <hr class="divider" />
+            <br />
+            <my-card title="Card Title" body="This is a whole extended bit building off the card title. Extra details added. And more fun to be had as always!"></my-card>
+            <br />
+            <br />
+            <h2 class="text-2xl sans-bold">Card with Image</h2>
+            <p class="text-base sans">This is a card component. It can contain any content you like, such as text, images, or buttons.</p>
+  
+        </section>  
+      </main>
+      <footer class="footer">
+        <p>&copy;2025 GMH Design System Library. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
 </html>

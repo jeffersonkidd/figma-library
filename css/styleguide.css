@@ -12,6 +12,37 @@
   --color-extended-yellow: #FFC72C;
   --color-extended-blue: #0190DB;
 
+  --color-on-background: #181C20;
+  --color-on-surface: #181C20;
+  --color-on-surface-variant: #41474D;
+
+  --color-background: #F7F9FF;
+
+  --color-surface-dim: #D7DADF;
+  --color-surface: #F7F9FF;
+  --color-surface-bright: #F7F9FF;
+  
+  --color-secondary: #50606F;
+  --color-secondary-on: #FFFFFF;
+  --color-secondary-container: #D3E5F6;
+  --color-secondary-on-container: #384956;
+
+
+  --color-surface-container-high: #E5E8ED;
+  --color-surface-container: #EBEEF3;
+  --color-surface-container-low: #F1F4F9;
+
+
+  --palette-primary-5: #001320;
+  --palette-primary-10: #001E30;
+  --palette-primary-15: #00283F;      
+  --palette-primary-20: #00344F;
+  --palette-primary-25: #093F5D;
+  --palette-primary-30: #1B4B69;
+  --palette-primary-35: #295676;
+  --palette-primary-40: #366382;
+  --palette-primary-50: #507B9D;
+
   --font-family-sans-regular: 'Avenir Regular';
   --font-family-sans-regular-pro: 'Avenir Next Regular';
   --font-family-sans-bold: 'Avenir Bold';

@@ -20,10 +20,13 @@ class MyCard extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div class="card">
-        <h2>${this.getAttribute('title')}</h2>
-        <p>${this.getAttribute('body')}</p>
+        <img src="${this.getAttribute('image')}" alt="Card Image" class="card-image" />
+        <hr class="divider line" />
+        <h2 class="text-2xl sans-bold">${this.getAttribute('title')}</h2>
+        <p class="sans-regular">${this.getAttribute('body')}</p>
       </div>
-    `;
+      `
+    ;
   }
 }
 
