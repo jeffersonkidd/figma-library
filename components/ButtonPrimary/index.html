@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <title>ButtonPrimary</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/figma-library/index.css" />
+  <link rel="stylesheet" href="/tokens.css" />
+  <link rel="stylesheet" href="/styles.css" />
   <style>
     .button-primary {
-      background: #033C5A;
+      background: var(--button-primary);
       color: #fff;
       border: none;
       border-radius: 6px;
@@ -23,7 +24,7 @@
 </head>
 <body>
   <template id="button-primary-template">
-    <button class="button-primary"><slot>Button</slot></button>
+    <button><slot>Button</slot></button>
   </template>
   <script>
     class ButtonPrimary extends HTMLElement {
@@ -38,6 +39,17 @@
   </script>
 
   <!-- Usage example -->
-  <button class="button-primary">Eat me!!!</button>
+  <h1>ButtonPrimary</h1>
+  <p>This is a primary button component.</p>
+  <button-primary class="button-primary"></button-primary>
+  <br />
+  <p>Or use a regular button with the same styles:</p>
+  <br />
+  <button class="button-primary">Click Me!</button>
+  <br />
+  <br />
+  <p>Or use a button with a different text:</p>
+  <br /> 
+  <button class="button-primary">Push Me !!!</button>
 </body>
 </html>

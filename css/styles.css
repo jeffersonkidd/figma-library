@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Hoefler Text';
+  src: url('/fonts/hoefler-text-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('/fonts/avenir-next-lt-pro-regular.otf') format('opentype');
+}
+
 * {
   box-sizing: border-box;
   outline: 0px solid red;
@@ -5,17 +15,25 @@
 }
 
 body {
-  font-family: Avenir;
+  font-family: 'Avenir Next LT Pro', sans-serif;
   background-color: var(--colors-background);
   color: var(--colors-white);
   padding: 2rem;
   line-height: 1.5;
-  font-weight: 400;
 }
 
 h1 {
-  font-size: 2rem;
+  font-family: 'Hoefler Text';  
+  font-size: 6rem;
+  font-weight: 100;
   margin-bottom: 1rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.6;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
 }
 
 ul {
