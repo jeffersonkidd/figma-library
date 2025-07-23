@@ -1,14 +1,115 @@
 @font-face {
-  font-family: 'Hoefler Text';
-  src: url('/fonts/hoefler-text-regular.ttf') format('truetype');
+  font-family: 'Avenir Regular';
+  src: url('/fonts/avenir-regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Avenir Next LT Pro';
+  font-family: 'Avenir Black';
+  src: url('/fonts/avenir-black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Next Regular';
   src: url('/fonts/avenir-next-lt-pro-regular.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'Avenir';
-  src: url('/fonts/avenir-regular.ttf') format('truetype');
+  font-family: 'Avenir Next Bold';
+  src: url('/fonts/avenir-next-lt-pro-bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Hoefler Text Regular';
+  src: url('/fonts/hoefler-text-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Liberator Heavy';
+  src: url('/fonts/liberator-heavy.otf') format('opentype');
+}
+
+
+.sans-regular {
+  font-family: 'Avenir Regular';
+}
+
+.sans-bold {
+  font-family: 'Avenir Black';
+}
+
+.serif {
+   font-family: 'Hoefler Text Regular';
+}
+
+.display {
+  font-family: 'Liberator Heavy';
+}
+
+.mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.text-9xl {
+  font-size: var(--font-size-9xl);
+  line-height: var(--line-height-9xl);
+}
+
+.text-8xl {
+  font-size: var(--font-size-8xl);
+  line-height: var(--line-height-8xl);
+}
+
+.text-7xl {
+  font-size: var(--font-size-7xl);
+  line-height: var(--line-height-7xl);
+}
+
+.text-6xl {
+  font-size: var(--font-size-6xl);
+  line-height: var(--line-height-6xl);
+}
+
+.text-5xl {
+  font-size: var(--font-size-5xl);
+  line-height: var(--line-height-5xl);
+}
+
+.text-4xl {
+  font-size: var(--font-size-4xl);
+  line-height: var(--line-height-4xl);
+}
+
+.text-3xl {
+  font-size: var(--font-size-3xl);
+  line-height: var(--line-height-3xl);
+}
+
+.text-2xl {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-2xl);
+}
+
+.text-xl {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+}
+
+.text-lg {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+}
+
+.text-base {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+.text-sm {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}
+
+.text-xs {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
 }

@@ -3,25 +3,37 @@
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  outline: 0px solid red;
 }
 
 html,
 body {
   margin: 0;
   height: 100%;
-  background-color: #000; /* Added for better contrast with white text */
+}
+
+html {
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  line-height: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* a blue color as a generic focus style */
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+  outline: -webkit-focus-ring-color auto 5px;
+  outline: 2px solid #4a90e2;
 }
 
 /* Improve accessibility */
