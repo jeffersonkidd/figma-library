@@ -1,18 +1,106 @@
 :root {
-  --colors-black: #000000;
-  --colors-white: #ffffff;
-  --colors-key-primary: #033C5A;
-  --colors-key-tertiary: #AA9868;
-  --colors-key-extended-light-yellow: #F8E08E;
-  --colors-key-extended-yellow: #FFC72C;
-  --colors-key-extended-blue: #0190DB;
-  --colors-primary: #28638a;
-  --colors-accent: #e0f0ff;
-  --colors-accent-hover: #c8e6ff;
-  --colors-text: #ffffff;
-  --colors-background: var(--colors-key-primary);
-  --colors-border: var(--colors-key-primary);
-  --colors-shadow: rgba(0, 0, 0, 0.15);
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --color-key-primary: #033C5A;
+  --color-key-tertiary: #AA9868;
+  --color-extended-light-yellow: #F8E08E;
+  --color-extended-yellow: #FFC72C;
+  --color-extended-blue: #0190DB;
+
+  --color-primary: #28638a;
+  --color-accent: #e0f0ff;
+  --color-accent-hover: #c8e6ff;
+  --color-text: var(--color-white);
+  --color-background: var(--color-key-primary);
+  --color-border: var(--colors-key-primary);
+  --color-shadow: rgba(0, 0, 0, 0.15);
+
+  --font-family-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-family-serif: 'Georgia', serif;
+  --font-family-mono: 'Courier New', Courier, monospace;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+  --font-size-7xl: 4.5rem;
+  --font-size-8xl: 6rem;
+  --font-size-9xl: 8rem;
+
+  --line-height-xs: 1.25rem;
+  --line-height-sm: 1.375rem;
+  --line-height-base: 1.5rem;
+  --line-height-lg: 1.625rem;
+  --line-height-xl: 1.75rem;
+  --line-height-2xl: 1.875rem;
+  --line-height-3xl: 2rem;
+  --line-height-4xl: 2.25rem;
+  --line-height-5xl: 2.5rem;
+  --line-height-6xl: 2.75rem;
+  --line-height-7xl: 3rem;
+  --line-height-8xl: 3.5rem;
+  --line-height-9xl: 4rem;
+
+  --spaxing-0: 0px;
+  --spacing-50: 2px;
+  --spacing-100: 4px;
+  --spacing-200: 8px;
+  --spacing-300: 12px;
+  --spacing-400: 16px;
+  --spacing-500: 20px;
+  --spacing-600: 24px;
+  --spacing-700: 28px;
+  --spacing-800: 32px;
+  --spacing-900: 36px;
+  --spacing-1000: 40px;
+  --spacing-1100: 44px;
+  --spacing-1200: 48px;
+  --spacing-1300: 52px;
+  --spacing-1400: 56px;
+  --spacing-1500: 60px;
+  --spacing-1600: 64px;
+  --spacing-2000: 80px;
+  --spacing-2400: 96px;
+  --spacing-3000: 120px;
+  --spacing-4000: 160px;
+
+  --spacing-negative-50: -2px;
+  --spacing-negative-100: -4px;
+  --spacing-negative-200: -8px;
+  --spacing-negative-300: -12px;
+  --spacing-negative-400: -16px;
+  --spacing-negative-500: -20px;
+  --spacing-negative-600: -24px;
+  --spacing-negative-700: -28px;
+  --spacing-negative-800: -32px;
+  --spacing-negative-900: -36px;
+  --spacing-negative-1000: -40px;
+  --spacing-negative-1100: -44px;
+  --spacing-negative-1200: -48px;
+  --spacing-negative-1300: -52px;
+  --spacing-negative-1400: -56px;
+  --spacing-negative-1500: -60px;
+  --spacing-negative-1600: -64px;
+  --spacing-negative-2000: -80px;
+  --spacing-negative-2400: -96px;
+  --spacing-negative-3000: -120px;
+  --spacing-negative-4000: -160px;
+
+  --opacity-80: 0.8;
+  --opacity-60: 0.6;
+  --opacity-40: 0.4;
+  --opacity-20: 0.2;
+  --opacity-10: 0.1;
+  --opacity-5: 0.05;
+  --opacity-0: 0;
+
   --colors-link: var(--colors-key-primary);
   --colors-link-hover: #e0f0ff;
   --colors-link-active: #c8e6ff;
@@ -21,27 +109,54 @@
   --colors-link-focus-outline: var(--colors-key-primary);
   --colors-link-focus-shadow: rgba(0, 0, 0, 0.15);
   --colors-link-focus-background: #e0f0ff;
-  --colors-link-focus-border: var(--colors-key-primary);;
-  --colors-link-focus-text: var(--colors-key-primary);;
-  --colors-link-focus-color: var(--colors-key-primary);;
+  --colors-link-focus-border: var(--colors-key-primary);
+  --colors-link-focus-text: var(--colors-key-primary);
+  --colors-link-focus-color: var(--colors-key-primary);
   --colors-link-focus-background-color: #e0f0ff;
-  --colors-link-focus-border-color: var(--colors-key-primary);;
-  --colors-link-focus-text-color: var(--colors-key-primary);;
+  --colors-link-focus-border-color: var(--colors-key-primary);
+  --colors-link-focus-text-color: var(--colors-key-primary);
   --colors-link-focus-shadow-color: rgba(0, 0, 0, 0.15);
-  --colors-link-focus-outline-color: var(--colors-key-primary);;
+  --colors-link-focus-outline-color: var(--colors-key-primary);
   --colors-link-focus-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
   --colors-link-focus-ring: rgba(0, 0, 0, 0.15);
   --colors-link-focus-ring-color: rgba(0, 0, 0, 0.15);
   --colors-primary-hover: #05507a;
-  --colors-primary-active: var(--colors-key-primary);;
+  --colors-primary-active: var(--colors-key-primary);
   --colors-primary-focus: #e0f0ff;
-  --colors-primary-focus-outline: var(--colors-key-primary);;
+  --colors-primary-focus-outline: var(--colors-key-primary);
   --colors-primary-focus-shadow: rgba(0, 0, 0, 0.15);
   --colors-primary-focus-background: #e0f0ff;
   --colors-primary-focus-border: #033C5A;
-  --colors-primary-focus-text: var(--colors-key-primary);;
-  --colors-primary-focus-color: var(--colors-key-primary);;
+  --colors-primary-focus-text: var(--colors-key-primary);
+  --colors-primary-focus-color: var(--colors-key-primary);
   --colors-primary-focus-background-color: #e0f0ff;
-  --colors-primary-focus-border-color: var(--colors-key-primary);;
-  --colors-primary-focus-text-color: var(--colors-key-primary);;
+  --colors-primary-focus-border-color: var(--colors-key-primary);
+  --colors-primary-focus-text-color: var(--colors-key-primary);
+
+  --radius-none: var(--spacing-0);
+  --radius-sm: var(--spacing-50);
+  --radius-md: var(--spacing-100);
+  --radius-lg: var(--spacing-200);
+  --radius-full: 9999px;
+
+  --button-primary-default-bg: var(--color-primary);
+  --button-primary-default-text: var(--color-white);
+  --button-primary-hover-bg: #05507a;
+  --button-primary-hover-text: var(--color-white);
+  --button-primary-active-bg: #033C5A;
+  --button-primary-active-text: var(--color-white);
+  --button-primary-focus-bg: #e0f0ff;
+  --button-primary-focus-text: var(--color-key-primary);
+
 }
+
+/* 
+<link rel="stylesheet" href="css/colors.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/utility.css" />
+<link rel="stylesheet" href="css/overrides.css" />
+*/
