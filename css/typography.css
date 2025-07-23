@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: 'Avenir Black';
+  font-family: 'Avenir Bold';
   src: url('/fonts/avenir-black.ttf') format('truetype');
 }
 
@@ -19,12 +19,12 @@
 }
 
 @font-face {
-  font-family: 'Hoefler Text Regular';
+  font-family: 'Hoefler Regular';
   src: url('/fonts/hoefler-text-regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Liberator Heavy';
+  font-family: 'Liberator Bold';
   src: url('/fonts/liberator-heavy.otf') format('opentype');
 }
 
@@ -38,7 +38,7 @@
 }
 
 .serif {
-   font-family: 'Hoefler Text Regular';
+   font-family: 'Hoefler Regular';
 }
 
 .display {
@@ -57,6 +57,7 @@
 .text-8xl {
   font-size: var(--font-size-8xl);
   line-height: var(--line-height-8xl);
+  letter-spacing: var(--letter-spacing-xs);
 }
 
 .text-7xl {
@@ -113,3 +114,11 @@
   font-size: var(--font-size-xs);
   line-height: var(--line-height-xs);
 }
+
+.heading-1 {
+  font-weight: 400;
+  font-size: var(--font-size-7xl);
+  line-height: var(--line-height-7xl);
+  letter-spacing: var(--letter-spacing-xs);
+}
+

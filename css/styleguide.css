@@ -3,24 +3,31 @@
   --color-white: #ffffff;
 
   --color-key-primary: #033C5A;
+  --color-key-secondary: #89929B;
   --color-key-tertiary: #AA9868;
+  --color-key-neutral: #919092;
+  --color-key-neutral-variant: #8E9195;
+  --color-key-error: #FF5449;
   --color-extended-light-yellow: #F8E08E;
   --color-extended-yellow: #FFC72C;
   --color-extended-blue: #0190DB;
 
-  --color-primary: #28638a;
-  --color-accent: #e0f0ff;
-  --color-accent-hover: #c8e6ff;
-  --color-text: var(--color-white);
-  --color-background: var(--color-key-primary);
-  --color-border: var(--colors-key-primary);
-  --color-shadow: rgba(0, 0, 0, 0.15);
-
   --font-family-sans-regular: 'Avenir Regular';
-  --font-family-sans-bold: 'Avenir Black';
-  --font-family-serif: 'Hoefler Text Regular';
-  --font-family-display: 'Liberator Heavy';
+  --font-family-sans-regular-pro: 'Avenir Next Regular';
+  --font-family-sans-bold: 'Avenir Bold';
+  --font-family-sans-bold: 'Avenir Next Bold';
+  --font-family-serif: 'Hoefler Regular';
+  --font-family-display: 'Liberator Bold';
   --font-family-mono: 'Roboto Mono', monospace;
+
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
 
   --font-size-xs: 12px;
   --font-size-sm: 14px;
@@ -50,6 +57,35 @@
   --line-height-8xl: var(--font-size-8xl);
   --line-height-9xl: var(--font-size-9xl);
 
+  --letter-spacing-xxxs: -3px;
+  --letter-spacing-xxxs: -2.5px;
+  --letter-spacing-xxs: -2px;
+  --letter-spacing-xs: -1.5px;
+  --letter-spacing-sm: -1px;
+  --letter-spacing-base: 0px;
+  --letter-spacing-lg: 1px;
+  --letter-spacing-xl: 1.5px;
+  --letter-spacing-xxl: 2px;
+  --letter-spacing-xxxl: 2.5px;
+  --letter-spacing-xxxxl: 3px;
+
+  --radius-none: var(--spacing-0);
+  --radius-xs: var(--spacing-50);
+  --radius-sm: var(--spacing-100);
+  --radius-md: var(--spacing-200);
+  --radius-lg: var(--spacing-400);
+  --radius-xl: var(--spacing-600);
+  --radius-2xl: var(--spacing-800);
+  --radius-full: 9999;    
+
+  --opacity-80: 0.8;
+  --opacity-60: 0.6;
+  --opacity-40: 0.4;
+  --opacity-20: 0.2;
+  --opacity-10: 0.1;
+  --opacity-5: 0.05;
+  --opacity-0: 0;
+
   --spacing-0: 0px;
   --spacing-50: 2px;
   --spacing-100: 4px;
@@ -72,7 +108,6 @@
   --spacing-2400: 96px;
   --spacing-3000: 120px;
   --spacing-4000: 160px;
-
   --spacing-negative-50: -2px;
   --spacing-negative-100: -4px;
   --spacing-negative-200: -8px;
@@ -95,13 +130,15 @@
   --spacing-negative-3000: -120px;
   --spacing-negative-4000: -160px;
 
-  --opacity-80: 0.8;
-  --opacity-60: 0.6;
-  --opacity-40: 0.4;
-  --opacity-20: 0.2;
-  --opacity-10: 0.1;
-  --opacity-5: 0.05;
-  --opacity-0: 0;
+
+
+  --color-primary: #28638a;
+  --color-accent: #e0f0ff;
+  --color-accent-hover: #c8e6ff;
+  --color-text: var(--color-white);
+  --color-background: var(--color-key-primary);
+  --color-border: var(--colors-key-primary);
+  --color-shadow: rgba(0, 0, 0, 0.15);
 
   --colors-link: var(--colors-key-primary);
   --colors-link-hover: #e0f0ff;
@@ -135,11 +172,6 @@
   --colors-primary-focus-border-color: var(--colors-key-primary);
   --colors-primary-focus-text-color: var(--colors-key-primary);
 
-  --radius-none: var(--spacing-0);
-  --radius-sm: var(--spacing-50);
-  --radius-md: var(--spacing-100);
-  --radius-lg: var(--spacing-200);
-  --radius-full: 9999px;
 
   --button-primary-default-bg: var(--color-primary);
   --button-primary-default-text: var(--color-white);

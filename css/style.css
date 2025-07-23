@@ -9,7 +9,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: gainsboro;
+  background-color: var(--color-key-secondary);
   color: var(--color-black);
 }
 
@@ -17,14 +17,17 @@ section {
   display: flex;
   width: 100%;
   margin: 0 auto;
+  border-radius: 32;
+  padding: var(--spacing-800);  
 }
-
 
 .container {
   width: 100%;
   max-width: 1056px;
+  background-color: var(--color-white);
+  border-radius: 16px;
 
-  padding: var(--spacing-200);
+  padding: var(--spacing-800);
   margin: 0 auto;
 }
 
@@ -39,7 +42,7 @@ nav {
   display: flex;
   background-color: var(--color-white);
   color: var(--color-black);
-  min-height: 32px;
+  min-height: 24px;
   padding: var(--spacing-300) var(--spacing-400);
 }
 
@@ -48,34 +51,46 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1056px;
+  max-width: 1032px;
   margin: 0 auto;
   gap: var(--spacing-100);
 }
 
+.navbar a {
+  text-decoration: underline;
+  color: var(--color-black);
+  font-size: var(--font-size-sm);
+  transition: color 175ms ease-in-out;
+}
+
 .navbar .logo {
+  text-decoration: none;
+
   min-width: 204px;
   font-size: var(--font-size-lg);
-  font-weight: bold;
 }
 
 .navbar ul {
-  
   width: 100%;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap-reverse;
-  gap: var(--spacing-200);
+  gap: var(--spacing-400);
 }
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 32px;
   background-color: var(--color-white);
   color: var(--color-black);
   font-size: var(--font-size-xs);
-  font-weight: bold;
-  padding: var(--spacing-100) 0;
+  padding: var(--spacing-200);
   gap: var(--spacing-100);
+}
+
+footer p {
+  text-align: center;
 }

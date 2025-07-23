@@ -13,27 +13,43 @@ body {
 }
 
 html {
-  font-family: "Avenir", Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1;
   scroll-behavior: smooth;
 }
 
 body {
+  font-family: var(--font-family-sans-regular);
   background-color: var(--color-background);
   line-height: 1;
 }
 
 a {
-  color: inherit;
+  color: var(--color-extended-blue);
   text-decoration: none;
+  transition: 400ms ease-in-out;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+a:active {
+  color: var(--color-accent-hover);
 }
 
 /* a blue color as a generic focus style */
 button:focus-visible,
 a:focus-visible {
   outline: -webkit-focus-ring-color auto 5px;
-  outline: 2px solid #4a90e2;
+}
+
+button {
+  cursor: pointer;
+  padding: var(--spacing-300) var(--spacing-600);
+  font-family: inherit;
+  font-size: var(--font-size-base);
+  margin: var(--spacing-200);
 }
 
 /* Improve accessibility */
