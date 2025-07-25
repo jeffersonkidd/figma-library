@@ -87,3 +87,13 @@
   line-height: var(--line-height-sm);
   color: var(--color-on-surface);
 }
+
+.widget {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
+  text-align: center;
+}

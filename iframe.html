@@ -3,60 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://jeffersonkidd.github.io/figma-library/css/globals.css" />
-    <link rel="stylesheet" href="https://jeffersonkidd.github.io/figma-library/css/styleguide.css" />
-    <link rel="stylesheet" href="https://jeffersonkidd.github.io/figma-library/css/styles.css" />
-    <link rel="stylesheet" href="https://jeffersonkidd.github.io/figma-library/css/components.css" />
-    <link rel="stylesheet" href="https://jeffersonkidd.github.io/figma-library/css/typography.css" />
+    <link rel="stylesheet" href="/css/globals.css" />
+    <link rel="stylesheet" href="/css/styleguide.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/typography.css" />
   <title>Custom Embed</title>
 
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0;
-      padding: var(--spacing-400);
-      font-family: avenir, sans-serif;
-      background: linear-gradient(145deg, #033C5A, #021F2E);
-      color: white;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin: 1rem 0;
-    }
-
-    .widget {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-      backdrop-filter: blur(8px);
-      text-align: center;
-    }
-
-    .button {
-      background: #AA9868;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      font-weight: bold;
-      margin-top: 1rem;
-      cursor: pointer;
-      transition: background 0.2s ease;
-    }
-
-    .button:hover {
-      background: #8c7b58;
-    }
-  </style>
 </head>
 <body>
-
+<wrapper>
+  <main>
   <div class="widget">
     <h1>Hello from a custom Wix iFrame!</h1>
     <p>This is fully styled and interactive HTML.</p>
@@ -76,6 +33,7 @@
       document.querySelector('.widget').style.transition = 'opacity 1s ease-in';
     }, 200);
   </script>
-
+  </main>
+</wrapper>
 </body>
 </html>
